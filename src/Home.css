@@ -1,0 +1,144 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 10px;
+}
+.home__container {
+}
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -120px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.home__row {
+  width: 100%;
+}
+.home__row > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products__pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 20px;
+}
+.products__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  margin-bottom: 10px;
+  height: 50px;
+  top: 60px;
+  z-index: 2;
+  background-color: rgba(234, 237, 237);
+  box-shadow: 5px 5px 15px #c7c9c9, -5px -5px 15px #ffffff;
+}
+
+.MuiAutocomplete-clearIndicator {
+  margin-right: 2px !important;
+  color: #ffffff !important;
+}
+
+.MuiAutocomplete-endAdornment {
+  background-color: #131921 !important;
+  border-radius: 50% !important;
+}
+
+.input_field .icons {
+  color: #acacac;
+}
+
+.input_field_input {
+  width: 350px;
+  background-color: #131921;
+  margin: 10px 0;
+  height: 40px;
+  border-radius: 50px !important;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+.input_field_input::placeholder {
+  color: #aaa !important;
+  font-weight: 500;
+}
+
+.group__Buttons {
+  color: white !important;
+  background-color: #131921 !important;
+}
+
+.main__Product {
+  margin-top: 40px;
+  width: 60%;
+}
+
+.selected {
+  background-color: #ee433d !important;
+}
+@media (max-width: 1058px) {
+  .main__Product {
+    width: 100%;
+  }
+  .product {
+    width: 45%;
+  }
+}
+
+@media (max-width: 835px) {
+  .main__Product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 577px) {
+  .main__Product {
+    width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .input_field_input {
+    height: 30px !important;
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 1005px) {
+  .group__Buttons {
+    font-size: 9px !important;
+    padding: 10px !important;
+  }
+}
+@media (max-width: 700px) {
+  .group__Buttons {
+    font-size: 9px !important;
+    padding: 5px !important;
+  }
+}
+@media (max-width: 660px) {
+  .products__header {
+    flex-direction: column;
+    height: 85px;
+  }
+
+  .input_field_input {
+    width: 400px !important;
+  }
+}

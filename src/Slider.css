@@ -1,0 +1,157 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.MuiSkeleton-wave::after {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(19, 25, 33, 0.4990371148459384) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+}
+
+.card {
+  margin: 10px;
+  width: 45rem;
+  height: 25rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0px 6px 6px -3px rgb(0 0 0 / 20%),
+    0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
+}
+
+.cardInfo {
+  width: 55%;
+  padding: 1.5rem;
+  margin-bottom: 15px;
+}
+.cardInfo .text-container {
+  height: 82%;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+.cardInfo .text-container h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Candal", sans-serif;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardInfo .text-container span {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.cardInfo .text-container p {
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.2rem;
+  z-index: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardInfo .cart-container {
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardInfo .cart-container .quantity-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardInfo .cart-container .quantity-controls strong {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding: 0.4rem 0;
+  font-family: "Roboto", sans-serif;
+}
+.cardInfo .cart-container .quantity-controls #quantity {
+  border: 0.08rem solid #ccc;
+  height: 3rem;
+  width: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.cardInfo .cart-container .add_to_cart {
+  width: 10rem;
+  height: 3rem;
+  background: #131921;
+  color: white;
+  border-radius: 0.5rem;
+  font-family: "Candal", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.cardImg {
+  width: 45%;
+}
+.cardImg strong {
+  text-align: right;
+  float: right;
+  display: block;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+.cardImg .img-container {
+  width: 90%;
+  height: 75%;
+}
+.cardImg .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cardImg .img-changer {
+  width: 90%;
+  text-align: center;
+}
+.cardImg .img-changer a {
+  padding: 0.5rem;
+}
+@media (max-width: 835px) {
+  .page {
+    width: 100%;
+  }
+  .card {
+    width: 35rem;
+  }
+  .cardInfo,
+  .cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 577px) {
+  .page {
+    width: 100%;
+  }
+  .card {
+    width: 25rem;
+  }
+}

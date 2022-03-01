@@ -1,0 +1,121 @@
+.conatainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.paperConatainer {
+  width: 100%;
+  max-width: 80%;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.newProducts {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.addProductImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__Fileimg {
+  position: absolute;
+  z-index: -1;
+}
+
+.modal__form {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.form__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 50%;
+}
+.img__container {
+  height: 400px;
+  width: 50%;
+
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__input {
+  border: none;
+  padding: 0 20px;
+  outline: 0;
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  box-shadow: 1px 1px 10px #d9d9d9, -1px -1px 10px #ffffff;
+}
+.container__textarea {
+  width: 80%;
+  overflow: hidden;
+  border: none;
+  padding: 25px 20px;
+  outline: 0;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #d9d9d9, -1px -1px 10px #ffffff;
+}
+.submitButton {
+  font-weight: 600;
+  margin-top: 5px;
+  cursor: pointer;
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  outline-width: 0;
+  background-color: #131921;
+  color: #fff;
+  box-shadow: 1px 1px 10px #10151c, -1px -1px 10px #161d26;
+}
+.product__img {
+  border-radius: 10px;
+  color: #131921 !important;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .form__container {
+    flex-direction: column;
+  }
+  .input__container,
+  .img__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+.orders {
+  padding: 20px;
+}
+.orders > h1 {
+  margin: 30px 0;
+}
+.orders__order {
+}
+.newOrders__Container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.orderedProductImgs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.order__ID {
+  text-align: right;
+  font-weight: 600;
+}
+.orderedProductImgs > img {
+  width: 150px;
+  margin: 20px 25px;
+}
